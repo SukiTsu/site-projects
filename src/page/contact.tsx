@@ -1,3 +1,4 @@
+import Footer from "../components/footer"
 import Navbar from "../components/navBar"
 
 const Contact = () => {
@@ -5,7 +6,10 @@ const Contact = () => {
     return(
         <div className="page">
             <Navbar />
+            <div className="content">
 
+            </div>
+            <Footer />
         </div>
     )
 }
