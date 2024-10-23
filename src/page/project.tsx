@@ -5,7 +5,7 @@ import "../assets/style/styleProjet.css"
 
 const Projets = () => {
     const data = [
-        { title: 'Site React Patisserie', img: './atelier-dharma.png', link: "../../", content: `
+        { title: 'Site React Patisserie', img: './atelier-dharma.png', link: "https://atelier-dharma.fr", content: `
             <p><strong>Bienvenue sur le site officiel de atelier-dharma.fr</strong>, votre pâtisserie artisanale de confiance, où chaque création est un mélange de tradition, d'innovation et de saveurs authentiques. 
             Ce site vitrine a été spécialement conçu pour vous offrir un aperçu de notre savoir-faire et de nos dernières créations.</br>
 
