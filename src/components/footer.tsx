@@ -8,7 +8,7 @@ const Footer =({}) => {
                 <div className="footer-section">
                     <h3>Nous suivre</h3>
                     <ul className="social-list">
-                        <li><a href="www.linkedin.com/in/buibrandon47">LinkedIn</a></li>
+                        <li><a href="https://www.linkedin.com/in/buibrandon47/">LinkedIn</a></li>
                         <li><a href="https://github.com/SukiTsu">GitHub</a></li>
                     </ul>
                 </div>
