@@ -13,6 +13,8 @@ const Contact =({}) => {
                     <h2>Mes coordonnées</h2>
                     <p><strong>Téléphone :</strong>07 77 86 07 71 </p>
                     <p><strong>Email :</strong>buibrandon47gmail.com</p>
+                    <p><strong>Linkedin :</strong><a href='https://www.linkedin.com/in/buibrandon47/'>Accès à mon profil Linkedin</a></p>
+                    <p><strong>GitHub :</strong><a href='https://github.com/SukiTsu'>Accès à mon profil GitHub</a></p>
                 </div>
             </div>
 

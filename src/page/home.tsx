@@ -24,7 +24,7 @@ const Home = () => {
                 <p>Aujourd'hui, je me prépare à intégrer la Coding Factory, où je compte me spécialiser encore davantage dans le développement web et renforcer mes compétences dans les technologies de pointe comme React et Node.js. 
                 Mon objectif est de continuer à apprendre et à progresser dans le domaine du développement, tout en trouvant un contrat d'alternance pour mettre mes compétences au service d'une entreprise innovante.
                 </p>
-                <h1>Ce que je vous propose :</h1>
+                <h1>Ce que je propose :</h1>
                 <ul>
                     <li><p><strong>Développement de sites web sur mesure :</strong> Création de sites modernes, ergonomiques et adaptés aux besoins de votre entreprise.</p></li>
                     <li><p><strong>Intégration d'API et services externes :</strong> Optimisation de vos données et fonctionnalités via l'intégration de solutions tierces.</p></li>
