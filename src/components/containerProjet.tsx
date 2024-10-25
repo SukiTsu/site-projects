@@ -44,7 +44,7 @@ const ContainerProjet:React.FC<Props> = ({title,content,img,link}) => {
 
     return (
         <>
-        <div className="project" onClick={openModal}>
+        <div className="project" onClick={openModal} key={title}>
                 <img src={img} alt={title} />
                 <div className="overlay">{title}</div>
             </div>

@@ -24,7 +24,7 @@ const Footer =({}) => {
                 <div className="footer-section">
                     <h3>Me contacter</h3>
                     <ul className="contact-list">
-                        <li><strong>Me trouver :</strong>Rue de Bezons, Carrières-sur-Seine (78)</li>
+                        <li><strong>Me trouver :</strong>Carrières-sur-Seine (78)</li>
                         <li><strong>Mon numéro de téléphone :</strong>07 77 86 07 71</li>
                         <li><strong>Mon mail :</strong>buibrandon47@gmail.com</li>
                     </ul>

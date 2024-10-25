@@ -43,7 +43,7 @@ const Portfolio = () => {
     return(
         <section id="portfolio" className="portfolio">
             <h1>Mes projets</h1>
-            <div className="gallery">
+            <div className="gallery" key={"portfolio"}>
                 {data.map((site) => (
                     <ContainerProjet title={site.title} img={site.img} link={site.link} content={site.content}/>
                 ))}

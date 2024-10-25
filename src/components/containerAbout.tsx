@@ -10,6 +10,7 @@ export default function About() {
                         Mon parcours m'a permis de développer une expertise solide dans la conception et le développement d'applications web, en alliant performance, design et convivialité.
                         Je suis actuellement à recherche d'un contrat d'alternance de 12 mois.
                     </p>
+                    <strong><a href='/Brandon_Bui_CV.pdf'>Accéder à mon CV</a></strong>
                 </div>
                 
             
