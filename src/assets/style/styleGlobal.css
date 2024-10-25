@@ -8,7 +8,6 @@ body {
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
-    background: linear-gradient(to bottom, var(--couleur-noir), var(--couleur-bleu));
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -34,24 +33,4 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.content {
-    background: #fff;
-    padding: 20px;
-    margin: 40px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.content h1{
-    color: var(--couleur-noir);
-}
-
-.content p{
-    color: var(--couleur-bleu);
 }

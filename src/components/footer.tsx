@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import '../assets/style/styleFooter.css'
 
 const Footer =({}) => {
@@ -16,16 +15,16 @@ const Footer =({}) => {
                 <div className="footer-section">
                     <h3>Mes pages</h3>
                     <ul className="page-list">
-                        <li><Link to="/" className="link-navbar">Accueil</Link></li>
-                        <li><Link to="/projets" className="link-navbar">Mes projets</Link></li>
-                        <li><Link to="/contact" className="link-navbar">Contact</Link></li>
+                        <li><a href="#about" className="link-navbar">A propos</a></li>
+                        <li><a href="#portfolio" className="link-navbar">Mes projets</a></li>
+                        <li><a href="#contact" className="link-navbar">Contact</a></li>
                     </ul>
                 </div>
 
                 <div className="footer-section">
                     <h3>Me contacter</h3>
                     <ul className="contact-list">
-                        <li><strong>Me trouver :</strong>Route de Bezons, Carrières-sur-Seine (78)</li>
+                        <li><strong>Me trouver :</strong>Rue de Bezons, Carrières-sur-Seine (78)</li>
                         <li><strong>Mon numéro de téléphone :</strong>07 77 86 07 71</li>
                         <li><strong>Mon mail :</strong>buibrandon47@gmail.com</li>
                     </ul>

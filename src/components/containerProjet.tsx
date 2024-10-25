@@ -44,11 +44,10 @@ const ContainerProjet:React.FC<Props> = ({title,content,img,link}) => {
 
     return (
         <>
-            <div className="container-projet" onClick={openModal}>
+        <div className="project" onClick={openModal}>
                 <img src={img} alt={title} />
-                <h2>{title}</h2>
+                <div className="overlay">{title}</div>
             </div>
-
             {modalOpen && (
                 <div className="modal-background active" onClick={handleBackgroundClick}>
                     <div className="modal-content">

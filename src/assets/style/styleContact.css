@@ -1,28 +1,24 @@
-/* Titre principal */
 .contact-title {
     text-align: center;
     font-size: 2.5em;
-    color: #d35400; /* Une couleur orangée pour l'automne */
+    color: #2c3e50;
     margin-bottom: 20px;
     }
 
     .contact-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 30px;
     }
     
-    .contact-details, .contact-hours {
-    width: 45%;
-    }
     
-    .contact-details h2, .contact-hours h2 {
+    .contact-details h2{
     font-size: 1.8em;
     color: #2c3e50;
     margin-bottom: 10px;
     }
     
-    .contact-details p, .contact-hours p {
+    .contact-details p {
     font-size: 1.1em;
     line-height: 1.6;
     }
@@ -58,8 +54,12 @@
         flex-direction: column;
     }
     
-    .contact-details, .contact-hours {
+    .contact-details {
         width: 100%;
         margin-bottom: 20px;
+        text-align: center;
     }
     }
+.contact-details strong {
+    color: #2c3e50;
+}

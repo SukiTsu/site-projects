@@ -1,9 +1,7 @@
 import ContainerProjet from "../components/containerProjet";
-import Footer from "../components/footer"
-import Navbar from "../components/navBar"
 import "../assets/style/styleProjet.css"
 
-const Projets = () => {
+const Portfolio = () => {
     const data = [
         { title: 'Site React Patisserie', img: './atelier-dharma.png', link: "https://atelier-dharma.fr", content: `
             <p><strong>Bienvenue sur le site officiel de atelier-dharma.fr</strong>, votre pâtisserie artisanale de confiance, où chaque création est un mélange de tradition, d'innovation et de saveurs authentiques. 
@@ -43,20 +41,15 @@ const Projets = () => {
       ];
 
     return(
-        <div className="page">
-            <Navbar />
-            <div className="content">
-                <h1>Mes projets</h1>
-                <div className="container-all-projet">
+        <section id="portfolio" className="portfolio">
+            <h1>Mes projets</h1>
+            <div className="gallery">
                 {data.map((site) => (
                     <ContainerProjet title={site.title} img={site.img} link={site.link} content={site.content}/>
                 ))}
-                </div>
             </div>
-            <img src=""/>
-            <Footer />
-        </div>
+        </section>
     )
 }
 
-export default Projets
+export default Portfolio

@@ -1,12 +1,10 @@
 import '../assets/style/styleContact.css'
 import Footer from '../components/footer'
-import Navbar from '../components/navBar'
+import Navbar from '../components/header'
 
 const Contact =({}) => {
     return(
-        <div>
-            <Navbar/>
-            <div className="content">
+        <section id="contact" className="contact">
             <h1 className="contact-title">Contactez-moi</h1>
             <div className="contact-info">
                 <div className="contact-details">
@@ -26,9 +24,7 @@ const Contact =({}) => {
                 </div>
             </div>
                 
-            </div>
-            <Footer />
-        </div>
+        </section>
     )
 }
 

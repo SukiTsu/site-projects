@@ -1,3 +1,69 @@
+.portfolio {
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Galerie en grille de 3 colonnes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    padding: 20px;
+    justify-items: center; 
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Limite la largeur de chaque projet */
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Passe à 2 colonnes */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Passe à 1 colonne */
+    }
+}
+
+
+
+
 .container-projet {
     width: 300px;
     margin: 20px;
@@ -56,6 +122,10 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px; 
+}
+
+.modal-content strong{
+    color: rgb(39, 39, 39);
 }
 
 .modal-close {
