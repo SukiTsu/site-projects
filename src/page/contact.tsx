@@ -18,7 +18,7 @@ const Contact =({}) => {
 
             <div className="contact-map">
                 <h2>Localisation</h2>
-                <p><strong>Adresse :</strong>Carrières-sur-Seine (78)</p>
+                <p>Carrières-sur-Seine (78)</p>
                 <div className="map-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20977.09409611507!2d2.1606415750200716!3d48.91278656570858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6638e37533e9f%3A0x40b82c3688c42e0!2sCarri%C3%A8res-sur-Seine!5e0!3m2!1sfr!2sfr!4v1729872719914!5m2!1sfr!2sfr" width="100%" height="100%" style={{border:0}} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
