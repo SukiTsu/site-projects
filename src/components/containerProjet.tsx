@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from "react"
 import "../assets/style/styleContainerProjet.css"
+import Carousel from "./carrousel"
 
 interface Props{
     title:string
     content:string
-    img:string
-    link:string
+    imgs: string[]
+    link:string | null
 }
 
-const ContainerProjet:React.FC<Props> = ({title,content,img,link}) => {
+const ContainerProjet:React.FC<Props> = ({title,content,imgs,link=null}) => {
     const [modalOpen, setModalOpen] = useState(false);
+    let txtLinl = <p></p>
+    if (link != null){
+        txtLinl = <a href={link} target="_blank" rel="noopener noreferrer">Voir le projet</a>
+    }
 
     const openModal = () => {
         setModalOpen(true);
@@ -45,17 +50,17 @@ const ContainerProjet:React.FC<Props> = ({title,content,img,link}) => {
     return (
         <>
         <div className="project" onClick={openModal} key={title}>
-                <img src={img} alt={title} />
+                <Carousel images={imgs} showControls={false}/>
                 <div className="overlay">{title}</div>
             </div>
             {modalOpen && (
                 <div className="modal-background active" onClick={handleBackgroundClick}>
                     <div className="modal-content">
                         <button className="modal-close" onClick={closeModal}>×</button>
-                        <img src={img} alt={title} />
+                        <Carousel images={imgs} />
                         <h2>{title}</h2>
                         <div dangerouslySetInnerHTML={{ __html: content }} />
-                        <a href={link} target="_blank" rel="noopener noreferrer">Voir le projet</a>
+                        {txtLinl}
                     </div>
                 </div>
             )}
