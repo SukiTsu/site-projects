@@ -6,7 +6,7 @@
     align-items: center;
     text-align: center;
     color: white;
-    background-image: url('../../../public/montagne.jpg');
+    background-image: url('../../../public/background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -16,6 +16,7 @@
 .header h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
+    color: white;
 }
 
 .header p {

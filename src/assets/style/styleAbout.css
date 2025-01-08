@@ -2,7 +2,7 @@
     padding: 40px 20px;
     text-align: center;
     background-color: #f9f9f9;
-    color: #333;
+    color: rgb(39 21 7);
 }
 
 .about h2 {
@@ -15,20 +15,45 @@
     margin: auto;
     line-height: 1.6;
     font-size: 1.1em;
-    color: #555;
+    color: rgb(14 25 26);
 }
 
 .about li {
     list-style: none;
 }
 .about .section{
-    background-image: url('../../../public/me_fond.png');
+    background-image: url('../../../public/bannier_about.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fixe l'image pour créer l'effet Parallax */
     background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
+.floating-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px; /* Ajustez la taille de l'image */
+    border-radius: 50%; /* Ajoute un effet arrondi si nécessaire */
+    box-shadow: 0px 4px 6px rgb(39 21 7); /* Ajoute une ombre pour un effet visuel */
+  }
 
+  .text-overlay {
+    background: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .text-overlay h1 {
+    font-size: 48px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
 
 .about .content{
     flex: 1;                   
@@ -36,10 +61,10 @@
 }
 
 .about .content h2{
-    color: white;
+    color: rgb(39 21 7);
 }
 .about .content p{
-    color: rgb(179, 179, 179);
+    color: rgb(39 21 7);
 }
 
 
@@ -55,7 +80,36 @@ ul {
 li {
     margin-bottom: 10px;
 }
-
-strong {
-    color: white;
-}
+/* Conteneur principal de la galerie */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacement entre les images */
+    padding: 20px;
+  }
+  
+  /* Style des images */
+  .gallery-image {
+    width: 200px; /* Largeur fixe */
+    height: 200px; /* Hauteur fixe */
+    object-fit: cover; /* Maintient le rapport d'aspect en recadrant si nécessaire */
+    border-radius: 10px; /* Coins arrondis (optionnel) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet esthétique */
+    transition: transform 0.3s ease; /* Animation de survol */
+  }
+  
+  /* Effet au survol */
+  .gallery-image:hover {
+    transform: scale(1.05); /* Agrandissement léger */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .gallery-image {
+      width: 150px; /* Réduction de la taille sur les petits écrans */
+      height: 150px;
+    }
+  }
+  

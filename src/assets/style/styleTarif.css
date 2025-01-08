@@ -1,0 +1,61 @@
+.tarif-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    background-color: rgb(39 21 7);
+    }
+
+/* Conteneur pour centrer et styliser le tableau */
+.pricing-table-container {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    overflow-x: auto;
+  }
+  
+  /* Style du tableau */
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* En-tête du tableau */
+  .pricing-table thead tr {
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .pricing-table th {
+    padding: 12px 15px;
+  }
+  
+  /* Cellules du tableau */
+  .pricing-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  /* Alternance de couleurs pour les lignes */
+  .pricing-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Survol des lignes */
+  .pricing-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive pour petits écrans */
+  @media (max-width: 600px) {
+    .pricing-table {
+      font-size: 14px;
+    }
+  }
+  
