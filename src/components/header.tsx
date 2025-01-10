@@ -6,13 +6,12 @@ export default function Header() {
         <nav className="navbar">
           <ul>
               <li><a href="#about">À propos</a></li>
-              <li><a href="#services">Mes services</a></li>
-              <li><a href="#tarif">Tarifs</a></li>
+              <li><a href="#portfolio">Mes Projets</a></li>
               <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <h1>VOTRE CORPS EN DE BONNES MAINS</h1>
-        <p>Valérie Dartout</p>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Developpeur Web</p>
       </header>
     );
   }
