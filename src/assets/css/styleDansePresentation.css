@@ -217,31 +217,31 @@ h6 {
 
 
 .robotoslab-card {
-  background: url("./projets/danse/uju-logo.png") no-repeat center center;
+  background: url("/projets/danse/uju-logo.png") no-repeat center center;
   background-size: cover;
 }
 
 .roboto-card {
-  background: url("./projets/danse/all_gris.jpg") no-repeat center center;
+  background: url("/projets/danse/all_gris.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .lobster-card {
-  background: url("./projets/danse/mina.jpg") no-repeat center center;
+  background: url("/projets/danse/mina.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .cabin-card {
-  background: url("./projets/danse/ivi.jpg") no-repeat center center;
+  background: url("/projets/danse/ivi.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .eczar-card {
-  background: url("./projets/danse/seol.jpg") no-repeat center center;
+  background: url("/projets/danse/seol.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .gentium-card {
-  background: url("./projets/danse/suki.jpg") no-repeat center center;
+  background: url("/projets/danse/suki.jpg") no-repeat center center;
   background-size: cover;
 }

@@ -12,7 +12,7 @@
   perspective-origin: 100% 50%;
 	.girl {
 		border:  #fffefe 10px solid;
-		background: url("./projets/danse/uju-logo.jpg") center ;
+		background: url("/projets/danse/uju-logo.jpg") center ;
 		margin-left: 0;
 		width: 450px;
 		height: 600px;

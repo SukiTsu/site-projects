@@ -15,7 +15,7 @@ const MesProjets = ({}) => {
 			overlay:"Mon projet dance"
 		},{
 			imageSrc:"./projets/dessin_banner.png",
-			href:"",
+			href:"/dessin",
 			overlay:"Mes projets en dessin"
 		}
 	]
