@@ -1,0 +1,101 @@
+*{box-sizing: border-box; -webkit-box-sizing: border-box}
+
+.wrap{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-perspective: 2500px;
+  perspective: 2500px;    
+  -webkit-perspective-origin: 100% 50%;
+  perspective-origin: 100% 50%;
+	.girl {
+		border:  #fffefe 10px solid;
+		background: url("./projets/danse/uju-logo.jpg") center ;
+		margin-left: 0;
+		width: 450px;
+		height: 600px;
+ 		bottom: 0%;
+		top: 10%;
+		position: absolute;
+	}
+	h1{
+		left: -5%;
+		transform: rotate(-49deg);
+		color: #333;
+		font-size: 4em;
+		font-family: Raleway, sans-serif;
+		top: 25%;
+		position: absolute;
+		span{
+			color: black;
+			font-weight: 1000;
+		}
+	}
+  .list{
+    width: 80%;
+    height: 150vh;
+    overflow-x: hidden;
+    webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+    transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+    margin: 0 0 0 200px;
+    padding: 150px 100px 500px 0;
+    scrollbar-width: none;
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
+    &::-webkit-scrollbar { 
+      display: block; 
+    }
+.item-dance{
+      width: 30%;
+      height: 400px;
+      margin: 20px;
+      display: inline-block;
+      position: relative;
+	&::after {
+    content: '';
+    position: absolute;
+    z-index: 150;
+    width: 100%;
+		top: 0px;
+		left: -0px;
+    height: 100%;
+    opacity: .1;
+  }
+      .img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 1px 1px 50px 0 #000;
+        -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        z-index: 10;
+        position: relative;
+        
+			}
+		}
+  }
+}
+button{
+	border: 2px solid black;
+	padding: 10px;
+	z-index:9999;
+	top:-300px;
+	position: relative;
+	display: inline;
+	margin-left:-60px;
+	outline: none;
+}
+@media only screen and (max-width: 768px) {
+  
+	h1{
+		display:none;
+	}
+}

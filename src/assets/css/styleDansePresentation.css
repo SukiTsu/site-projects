@@ -1,0 +1,247 @@
+
+.font--robotoslab {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-weight: 700;
+}
+
+.font--roboto {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.font--lobster {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+}
+
+.font--cabin {
+  font-family: 'Cabin', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.font--eczar {
+  font-family: 'Eczar', Georgia, serif;
+  font-weight: 700;
+}
+
+.font--gentium {
+  font-family: 'Gentium Basic', Georgia, serif;
+  font-weight: 400;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 3.5em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 2.125em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.75em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 1.25em;
+  margin: 0;
+  font-weight: normal;
+}
+
+.author {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  color: #999;
+  a {
+    color: #A1BEE6;
+    text-decoration: none;
+    &:hover {
+      color: #327CCB;
+    }
+  }
+}
+
+
+.bx-viewport {
+  overflow: visible !important;
+}
+
+.bx-pager {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  outline: 0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.full-card {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 60px;
+  height: 80vh;
+  max-height: 600px;
+  background: white;
+  width: 90%;
+  max-width: 1300px;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+
+.font-card {
+  position: relative;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(45deg, rgba(159, 190, 230, 1) 0%, rgba(223, 234, 238, 1) 100%);
+  ;
+  padding: 20px 20px;
+  color: white;
+  margin: 0 15px;
+  text-align: center;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, transform 0.3s;
+  transition-delay: 0.15s;
+  &.hovered-card {
+    box-shadow: 0 5px 3px -5px rgba(0, 0, 0, 0.3), 0 2px 8px -5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  p {
+    line-height: 1.4;
+  }
+}
+
+.font-description {
+  padding: 0 30px;
+  margin: 15px;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h2 {
+    color: rgb(86, 87, 94);
+    span {
+      color: rgb(210, 210, 210);
+    }
+  }
+  p {
+    padding-left: 15px;
+    color: #777;
+    line-height: 1.8;
+    &:before {
+      content: "\2014";
+      margin-left: -15px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.explore-button {
+  font-size: 0.9em;
+  background: white;
+  width: 80%;
+  color: #a7a7a7;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+  transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+  &:hover {
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+    color: #6f6f6f;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .full-card {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+  }
+  .font-card {
+    width: calc(50% - 30px);
+  }
+  .font-description {
+    width: 100%;
+  }
+}
+
+
+.robotoslab-card {
+  background: url("./projets/danse/uju-logo.png") no-repeat center center;
+  background-size: cover;
+}
+
+.roboto-card {
+  background: url("./projets/danse/all_gris.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.lobster-card {
+  background: url("./projets/danse/mina.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.cabin-card {
+  background: url("./projets/danse/ivi.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.eczar-card {
+  background: url("./projets/danse/seol.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.gentium-card {
+  background: url("./projets/danse/suki.jpg") no-repeat center center;
+  background-size: cover;
+}

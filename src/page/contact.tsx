@@ -1,6 +1,6 @@
 import '../assets/style/styleContact.css'
 import Footer from '../components/footer'
-import Navbar from '../components/header'
+import Navbar from '../components/navbarre'
 
 const Contact =({}) => {
     return(

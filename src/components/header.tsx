@@ -1,17 +1,23 @@
-import '../assets/style/styleHeader.css'
+const Header = ({}) => {
 
-export default function Header() {
     return (
-      <header className="header">
-        <nav className="navbar">
-          <ul>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#portfolio">Mes Projets</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Developpeur Web</p>
-      </header>
-    );
-  }
+        <>
+        <section id="welcome-hero" className="welcome-hero">
+			<div className="container">
+				<div className="row">
+					<div className="col-md-12 text-center">
+						<div className="header-text">
+							<h2>Bienvenue<span>, </span>je me présente<span>.</span>  </h2>
+							<p>développeur web (mais aussi...</p>
+							<a href="/CV.pdf" download>Mon CV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+        </>
+    )
+}
+
+export default Header

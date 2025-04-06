@@ -1,7 +1,7 @@
 // lib_module/src/components/organismes/Carousel.tsx
 
 import React, { useState, useEffect } from 'react';
-import '../assets/style/styleCarrousel.css';
+import '../assets/css/styleCarrousel.css';
 
 interface CarouselProps {
   images: string[];

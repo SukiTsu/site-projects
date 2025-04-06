@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react"
-import "../assets/style/styleContainerProjet.css"
+import "../assets/css/styleContainerSite.css"
 import Carousel from "./carrousel"
 
 interface Props{
     title:string
     content:string
-    imgs: string[]
+    dirImg: string
+    len:number
+    format:string
     link:string | null
 }
 
-const ContainerProjet:React.FC<Props> = ({title,content,imgs,link=null}) => {
+const ContainerProjet:React.FC<Props> = ({title,content,len,format,dirImg,link=null}) => {
     const [modalOpen, setModalOpen] = useState(false);
+    let imgs: string[] = []
     let txtLinl = <p></p>
     if (link != null){
         txtLinl = <a href={link} target="_blank" rel="noopener noreferrer">Voir le projet</a>
@@ -46,6 +49,10 @@ const ContainerProjet:React.FC<Props> = ({title,content,imgs,link=null}) => {
             window.removeEventListener('keydown', handleEscape);
         };
     }, [modalOpen]);
+
+    for (let i=1;i<len+1;i++){
+        imgs.push(dirImg+"/"+i+"."+format)
+    }
 
     return (
         <>
