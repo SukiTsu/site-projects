@@ -1,4 +1,4 @@
-import ContainerProjet from "../components/containerProjet";
+/*import ContainerProjet from "../components/containerProjet";
 import "../assets/style/styleProjet.css"
 
 const Portfolio = () => {
@@ -83,4 +83,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Portfolio*/
